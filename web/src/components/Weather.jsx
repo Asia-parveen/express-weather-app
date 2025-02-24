@@ -6,7 +6,7 @@ const Weather = () => {
     const [weather, setWeather] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:3000/api/weather")
+        axios.get("https://express-weather-app-production.up.railway.app/api/weather")
             .then(response => setWeather(response.data))
             .catch(error => console.log(error));
     }, []);
